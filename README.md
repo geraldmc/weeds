@@ -5,30 +5,28 @@
 
 <!-- code_chunk_output -->
 
-* [Content](#pytorch-template-project)
-	* [Requirements](#requirements)
-	* [Features](#features)
-	* [Folder Structure](#folder-structure)
-	* [Usage](#usage)
-		* [Config file format](#config-file-format)
-		* [Using config files](#using-config-files)
-		* [Resuming from checkpoints](#resuming-from-checkpoints)
-    * [Using Multiple GPU](#using-multiple-gpu)
-	* [Customization](#customization)
-		* [Custom CLI options](#custom-cli-options)
-		* [Data Loader](#data-loader)
-		* [Trainer](#trainer)
-		* [Model](#model)
-		* [Loss](#loss)
-		* [metrics](#metrics)
-		* [Additional logging](#additional-logging)
-		* [Validation data](#validation-data)
-		* [Checkpoints](#checkpoints)
-    * [Tensorboard Visualization](#tensorboard-visualization)
-	* [Contribution](#contribution)
-	* [TODOs](#todos)
-	* [License](#license)
-	* [Acknowledgements](#acknowledgements)
+- [Weeds Project](#weeds-project)
+  - [Requirements](#requirements)
+  - [Folder Structure](#folder-structure)
+  - [Usage](#usage)
+    - [Config file format](#config-file-format)
+    - [Using config files](#using-config-files)
+    - [Resuming from checkpoints](#resuming-from-checkpoints)
+    - [Using Multiple GPU](#using-multiple-gpu)
+  - [Customization](#customization)
+    - [Custom CLI options](#custom-cli-options)
+    - [Data Loader](#data-loader)
+    - [Trainer](#trainer)
+    - [Model](#model)
+    - [Loss](#loss)
+    - [Metrics](#metrics)
+    - [Additional logging](#additional-logging)
+    - [Testing](#testing)
+    - [Validation data](#validation-data)
+    - [Checkpoints](#checkpoints)
+    - [Tensorboard Visualization](#tensorboard-visualization)
+  - [TODOs](#todos)
+  - [License](#license)
 
 <!-- /code_chunk_output -->
 
@@ -36,7 +34,6 @@
 * Python >= 3.5 (3.6 recommended)
 * PyTorch >= 0.4 (1.2 recommended)
 * tqdm (Optional for `test.py`)
-* tensorboard >= 1.14 (see [Tensorboard Visualization](#tensorboard-visualization))
 
 ## Folder Structure
   ```
@@ -338,10 +335,6 @@ If you need more visualizations, use `add_scalar('tag', data)`, `add_image('tag'
 
 **Note**: You don't have to specify current steps, since `WriterTensorboard` class defined at `logger/visualization.py` will track current steps.
 
-## Contribution
-Feel free to contribute any kind of function or enhancement, here the coding style follows PEP8
-
-Code should pass the [Flake8](http://flake8.pycqa.org/en/latest/) check before committing.
 
 ## TODOs
 
@@ -356,10 +349,4 @@ Code should pass the [Flake8](http://flake8.pycqa.org/en/latest/) check before c
 
 ## License
 This project is licensed under the MIT License. See  LICENSE for more details
-
-
-## Acknowledgement
-- [PyTorch-Encoding](https://github.com/zhanghang1989/PyTorch-Encoding)
-- [Pytorch-Template](https://github.com/victoresque/pytorch-template/blob/master/README.m)
-- [Synchronized-BatchNorm-PyTorch](https://github.com/vacancy/Synchronized-BatchNorm-PyTorch)
 
